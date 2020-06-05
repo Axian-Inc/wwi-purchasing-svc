@@ -1,0 +1,24 @@
+{
+  "license": "UNLICENSED",
+  "scripts": {
+    "compile": "tsc",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "start": "ts-node src/index.ts",
+    "develop": "nodemon",
+    "provision": "ts-node src/devops/provision.ts",
+    "send-command": "ts-node src/devops/sendCompletePurchaseCommand.ts"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mssql": "^5.1.0",
+    "@azure/service-bus": "^1.1.7", 
+    "azure": "2.3.1-preview"
+  },
+  "devDependencies": {
+    "@types/mssql": "^4.3.1",
+    "@types/node": "^12.11.7",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
